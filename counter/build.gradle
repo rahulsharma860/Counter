@@ -18,7 +18,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -46,7 +46,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.rahulsharma860'
                 artifactId = 'counter'
-                version = '1.0.0'
+                version = '1.0.1'
             }
         }
     }
